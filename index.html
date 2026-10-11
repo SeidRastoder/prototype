@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Ping Pong</h1>
+    
+    
+  </header>
+    <div id ='formSectionP1'>
+      <p>Player1:</p>
+      <label for="fName">First Name:</label>
+      <input id="fName" placeholder="Type here...">
+      <label for="lName">Last Name:</label>
+      <input id="lName" placeholder="Type here...">
+    </div>
+    <div id ='formSectionP2'>
+      <p>Player2:</p>
+      <label for="fName2">First Name:</label>
+      <input id="fName2" placeholder="Type here...">
+      <label for="lName2">Last Name:</label>
+      <input id="lName2" placeholder="Type here...">
+      <button id = 'playerButton'>Create Game</button>
+    </div>
+    <div id ='successSection' style =display:none>
+      <p>Game Created!</p>
+      <p id ='displayP1'></p>
+      <p id ='displayP2'></p>
+      <button id = 'startGameButton'>Start Game</button>
+      <button id = 'renamePlayersButton'>Rename Players</button> 
+    </div>
+    <div id ='gameOnGoing'style =display:none>
+      <h1>Game On Going!</h1>
+      <button id = 'restartGameButton'>Restart Game</button>
+
+    </div>
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
