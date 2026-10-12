@@ -19,6 +19,9 @@ const displayPlayer2 = document.getElementById('displayP2');
 const buttonStartGame = document.getElementById('startGameButton');
 const restartGameButton = document.getElementById('restartGameButton');
 const renamePlayersButton = document.getElementById('renamePlayersButton');
+const incrementScoreP1 =document.getElementById('incrementP1');
+const decrementScoreP1 =document.getElementById('decrementP1');
+var scoreP1 = document.getElementById('scoreP1');
 button.addEventListener('click', function() {
     player1.firstName = document.getElementById('fName').value;
     player1.lastName = document.getElementById('lName').value;
@@ -47,6 +50,14 @@ renamePlayersButton.addEventListener('click', function() {
     formSection.style.display = 'block';
     formSection2.style.display = 'block';
 })
+incrementScoreP1.addEventListener('click', function() {
+    scoreP1.textContent = parseInt(scoreP1.textContent) + 1;
+})
+decrementScoreP1.addEventListener('click', function() {
+    scoreP1.textContent= parseInt(scoreP1.textContent) - 1;
+})
+
+
 
 
 
